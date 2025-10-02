@@ -156,11 +156,6 @@ li {
     margin-left: 110px;
 } */
 
-p {
-    color: blue;
-    text-align: center;
-}
-
 .main {
     background-color: aqua;
     display: flex;
@@ -194,4 +189,49 @@ p {
     background-color: blue;
     height: 200px;
     width: 200px;
+}
+
+.parent {
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.child {
+    border: 1px dashed red;
+    height: 30px;
+    width: 30px;
+}
+
+.parent > p {
+    background-color: yellow;
+}
+
+.parent p {
+    color: red;
+}
+
+.year {
+    margin-top: 200px;
+}
+
+.music {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+img {
+    height: 200px;
+    width: 140px;
+}
+
+figure{
+    margin: 90px;
+}
+
+.img-movie {
+    height: 200px;
+    width: 140px;
 }
