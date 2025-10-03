@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./positions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Index</a>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart" style="color: #74C0FC;"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Relative</h1>
+        <div class="box red">
+            <p>Normal</p>
+        </div>
+        <div class="box green relative">
+            <p>Relative</p>
+        </div>
+
+        <h1>Absolute (dans parent)</h1>
+        <div class="parent">
+            <div class="box yellow absolute">
+                <p>Absolute</p>
+            </div>
+        </div>
+
+        <h1>Fixed</h1>
+        <div class="box blue fixed">
+            <p>Fixed</p>
+        </div>
+
+        <h1>Sticky (va coller au scroll)</h1>
+        <div class="sticky">
+            <div class="box sticky-container">
+                <p>Sticky</p>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, voluptatum pariatur ipsa, assumenda
+                quibusdam minus et velit atque quasi id quia doloremque non. Facere, reiciendis impedit nulla
+                delectus voluptatem esse.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, voluptatum pariatur ipsa, assumenda
+                quibusdam minus et velit atque quasi id quia doloremque non. Facere, reiciendis impedit nulla
+                delectus voluptatem esse.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, voluptatum pariatur ipsa, assumenda
+                quibusdam minus et velit atque quasi id quia doloremque non. Facere, reiciendis impedit nulla
+                delectus voluptatem esse.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, voluptatum pariatur ipsa, assumenda
+                quibusdam minus et velit atque quasi id quia doloremque non. Facere, reiciendis impedit nulla
+                delectus voluptatem esse.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, voluptatum pariatur ipsa, assumenda
+                quibusdam minus et velit atque quasi id quia doloremque non. Facere, reiciendis impedit nulla
+                delectus voluptatem esse.</p>
+
+        </div>
+
+        <div class="box-index">
+            box-index
+            <div class="box-child">
+                box-child!
+                Je peux passer devant la div verte !
+            </div>
+        </div>
+
+        <div class="outside-box">
+            Div verte, outside-box
+        </div>
+
+        <div class="index">
+            index
+            <div class="red-child">
+                Carré rouge, red-child
+            </div>
+            <div class="green-box">
+                Carré vert, green-box
+            </div>
+        </div>
+        <i class="fa-solid fa-house"></i>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+.box {
+    width: 150px;
+    height: 150px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    background: red;
+}
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.blue {
+    background: blue;
+}
+
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.parent {
+    position: relative;
+    height: 150px;
+    border: 1px dotted red;
+    margin-top: 15px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: black;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sticky {
+    height: 200px;
+    overflow: auto;
+    border: 3px dashed purple;
+    margin-top: 10px;
+}
+
+.sticky-container {
+    position: sticky;
+    top: 0;
+    background: cyan;
+    color: black;
+}
+
+.box-index {
+    position: relative;
+    margin-top: 50px;
+}
+
+.box-child {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+
+.outside-box {
+    position: relative;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin-top: -50px;
+}
+
+.index {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: lightblue;
+    margin-top: 90px;
+}
+
+.red-child {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    z-index: 1;
+}
+
+.green-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background: green;
+    z-index: 2;
+    margin-bottom: 100px;
+}
