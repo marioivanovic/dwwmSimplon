@@ -1,4 +1,3 @@
-@import url(./variable.css);
 html,
 body,
 div,
@@ -124,38 +123,74 @@ table {
     border-spacing: 0;
 }
 
-main {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
+:root {
+    --main-color: #c5e122;
+    --font-size-base: 120px;
+    --spacing: 10rem;
+    --border-radius: 12px;
+}
+
+body {
+    color: var(--main-color);
+    font-size: var(--font-size-base);
+    margin: var(--spacing);
 }
 
 .card {
-    width: 300px;
-    aspect-ratio: 1/1;
-    border: 2px solid black;
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card.contain img {
-    object-fit: contain;
-}
-
-.card.fill img {
-    object-fit: fill;
-}
-
-.card.none img {
-    object-fit: none;
-}
-
-p {
+    background: #f9f9f9;
+    border: 2px solid var(--main-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing);
+    width: 250px;
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin: 40px 0;
+}
+
+button {
+    background: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: calc(var(--spacing) / 2) var(--spacing);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005ccc;
+}
+
+.box {
+    padding: 1rem;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+}
+
+.box:has(img) {
+    border-color: #0078ff;
+    background: #2468c1;
+}
+
+h1,
+h2,
+h3 {
+    color: purple;
+}
+
+:is(.red-title) {
+    color: red;
+}
+
+/* :is(h1, h2, h3) {
+    color: #ff4081;
+    font-family: "Poppins", sans-serif;
+} */
+
+:where(section) {
+    background: #8d8b8b;
+    padding: 5rem;
+}
+
+section.contact {
+    background: #3c7dc7;
+    color: white;
 }

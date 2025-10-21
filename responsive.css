@@ -163,16 +163,17 @@ main {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
-    main {
+    .product_container {
         background: blue;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
     }
     .card {
         background: yellow;
         width: 80%;
         height: 600px;
+        margin-top: 10px;
     }
 
     h1 {
