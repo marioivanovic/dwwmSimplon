@@ -176,6 +176,10 @@ h3 {
     color: purple;
 }
 
+h1:hover {
+    text-decoration: underline;
+}
+
 :is(.red-title) {
     color: red;
 }
