@@ -1,0 +1,254 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* DEBUT CSS PERSO */
+nav {
+    height: 100px;
+    background-color: cornflowerblue;
+}
+
+ul {
+    background-color: azure;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    background-color: yellow;
+}
+
+li:nth-child(3n + 2) {
+    background-color: chocolate;
+}
+
+/* an+b */
+
+.container-cards {
+    background-color: bisque;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+}
+
+.container-cards-title {
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: rgb(125, 207, 207);
+    width: 300px;
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+
+.card:nth-child(even) {
+    background-color: chocolate;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+figcaption {
+    font-size: 8px;
+}
+
+p {
+    font-size: 12px;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tfoot {
+    background: green;
+}
+
+form {
+    border: 1px solid red;
+    /* margin: 50px 0 0 0; */
+    /* padding: 100px 0 0 0; */
+    margin: 300px 0 600px 0;
+    background-color: aquamarine;
+}
+
+.signup-title {
+    background-color: blanchedalmond;
+    color: blueviolet;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+#lastname {
+    background-color: chartreuse;
+}
+
+input {
+    height: 30px;
+    width: 170px;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    background-color: darkgreen;
+    border: none;
+    border-radius: 9px;
+}

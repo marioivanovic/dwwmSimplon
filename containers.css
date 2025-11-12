@@ -142,6 +142,11 @@ table {
     transition: all 0.3s ease;
 }
 
+img {
+    width: 100px;
+    height: 40px;
+}
+
 p {
     padding: 10px;
 }
@@ -151,5 +156,10 @@ p {
         flex-direction: row;
         background: aqua;
         max-width: 600px;
+    }
+
+    img {
+        width: 900px;
+        height: 700px;
     }
 }

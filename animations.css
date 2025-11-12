@@ -144,6 +144,7 @@ h3 {
 
 .btn:hover {
     background-color: bisque;
+    color: black;
 }
 
 /* TRANSFORM */
@@ -211,7 +212,7 @@ a:hover {
     width: 400px;
     height: 400px;
     background-color: rgb(145, 113, 101);
-    animation: spin 3s infinite linear;
+    animation: spin 2s infinite linear;
 }
 
 /* KEYFRAME ETAPES */
@@ -246,7 +247,7 @@ a:hover {
     color: black;
     height: 30px;
     width: 80px;
-    transition: background 0.5s cubic-bezier(1, 3, 1, 0);
+    transition: background 0.5s cubic-bezier(.78,-0.62,.4,1.66);
 }
 
 .cubic:hover {
@@ -335,7 +336,7 @@ img {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(20px);
     }
     100% {
         transform: translateY(0);
@@ -377,5 +378,5 @@ img {
     width: 200px;
     border-radius: 50%;
     border: 1px solid black;
-    animation: morph 3s ease-in-out infinite;
+    animation: morph 8s ease-in-out infinite;
 }

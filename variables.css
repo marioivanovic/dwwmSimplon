@@ -124,10 +124,11 @@ table {
 }
 
 :root {
-    --main-color: #c5e122;
+    --main-color: #dff726;
     --font-size-base: 120px;
     --spacing: 10rem;
     --border-radius: 12px;
+    --font-family: "sans serif";
 }
 
 body {

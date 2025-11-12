@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./accessibilité.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="#contenu" class="skip-link">Aller au contenu principal</a>
+
+    <button class="theme-toggle" aria-label="Changer le thème">🌓</button>
+
+    <header>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenu">
+        <h1>Accessibilité Web – Démonstration complète</h1>
+        <p>
+            Ce document regroupe les bonnes pratiques d’accessibilité HTML, WAI-ARIA, navigation clavier,
+            contrastes, formulaires, tableaux, lien d’évitement et thème clair/sombre.
+        </p>
+
+        <section aria-labelledby="titre-form">
+            <h2 id="titre-form">Formulaire de contact</h2>
+
+            <form aria-describedby="form-help">
+                <p id="form-help">Les champs marqués d’un * sont obligatoires.</p>
+
+                <label for="name">Nom complet *</label>
+                <input id="name" name="name" type="text" required aria-required="true">
+
+                <label for="email">Adresse e-mail *</label>
+                <input id="email" name="email" type="email" required aria-required="true" aria-describedby="emailHelp">
+                <p id="emailHelp" class="error" aria-live="polite"></p>
+
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+
+        <section aria-labelledby="titre-tableau">
+            <h2 id="titre-tableau">Planning hebdomadaire DWWM</h2>
+
+            <table>
+                <caption>Horaires des modules par jour</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Jour</th>
+                        <th scope="col">Module</th>
+                        <th scope="col">Formateur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Lundi</th>
+                        <td>HTML / CSS</td>
+                        <td>Mario</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mardi</th>
+                        <td>JavaScript</td>
+                        <td>Laurent</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mercredi</th>
+                        <td>Node.js</td>
+                        <td>Laurent</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jeudi</th>
+                        <td>Figma</td>
+                        <td>Mario</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Vendredi</th>
+                        <td>MySQL</td>
+                        <td>Laurent</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Formation DWWM – Tous droits réservés.</p>
+    </footer>
+    <script src="./accessibilté.js"></script>
+</body>
+
+</html>
